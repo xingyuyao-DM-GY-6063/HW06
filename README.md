@@ -1,6 +1,25 @@
-# p5.js Template
+# HW06
 
+I chose Global Inflation (1970 - 2022):CSV.The dataset contains inflation data from different countries, with inflation rates listed for various years from 1970 to 2022. 
+
+
+I want to make an **Inflation Burst Animation**: Each country's inflation rate could be visualized as expanding circles, where the size of the circle changes over time to reflect different years' inflation rates.
 This is a README file that can be used to describe and document your assignment.
+
+
+在写代码的过程中，我出现了几次报错，原因是有的国家在某一年没有数据，出现了数据遗失的情况。所以我使用condition语句来处理丢失的数据。
+```
+      if (rate !== "") {
+        inflationRates.push(float(rate));
+      } else {
+        inflationRates.push(null); // Handle missing data
+      }
+```
+```
+    // Skip countries with no inflation data for the current year
+    if (inflationRate === null) continue;
+```
+
 
 Markdown Cheatsheet (from [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)):
 
