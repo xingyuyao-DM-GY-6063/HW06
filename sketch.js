@@ -54,12 +54,12 @@ function draw() {
     if (inflationRate === null) continue;
 
     // Map the inflation rate to a circle size
-    let size = map(inflationRate, 0, maxInflation, 10, 200);
+    let circleSize = map(inflationRate, 0,maxInflation, 10, 200);
 
     // Draw the inflation circle
     fill(country.color);
     noStroke();
-    ellipse(country.x, country.y, size, size);
+    ellipse(country.x, country.y, circleSize);
 
     // Display country name
     fill(255);
@@ -78,7 +78,7 @@ function draw() {
   }
 }
 
-// Helper function to get the inflation rate for a country in a specific year
+// create a function to get the inflation rate for a country in a specific year
 function getInflationForYear(country, year) {
   let index = year - startYear;
   if (index >= 0 && index < country.inflationRates.length) {
