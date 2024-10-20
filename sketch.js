@@ -62,13 +62,13 @@ function draw() {
     ellipse(country.x, country.y, circleSize);
 
     // Display country name
-    fill(255);
+    fill(0);
     textSize(12);
     text(country.name, country.x, country.y);
   }
 
   // Display current year
-  fill(255);
+  fill(0);
   textSize(32);
   text("Year: " + int(currentYear), width / 2, height / 2);
   // Increment the year for the animation
