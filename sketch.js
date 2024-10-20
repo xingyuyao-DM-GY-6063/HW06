@@ -54,7 +54,7 @@ function draw() {
     if (inflationRate === null) continue;
 
     // Map the inflation rate to a circle size
-    let circleSize = map(inflationRate, 0,maxInflation, 10, 200);
+    let circleSize = map(inflationRate, 0, maxInflation, 10, 200);
 
     // Draw the inflation circle
     fill(country.color);
