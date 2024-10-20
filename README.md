@@ -13,7 +13,7 @@ text("Year: " + int(currentYear), width / 2, height / 2);
     currentYear = startYear;
   }
 ```
-![year](image.png)
+![year](image-1.png)
 
 
 In the process of writing the code, I had a couple of error reports due to the fact that there were countries that had no data for a particular year and there was missing data. So I used the condition statement to handle the missing data.
